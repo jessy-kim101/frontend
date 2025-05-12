@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*2 columns*/
+    grid-template-rows: repeat(4,1fr); /*3 rows*/
+    gap:10px;
+    border:3px solid #000;
+    min-height: 100vh; /*full height*/
+    padding: 20px;
+}
+.Daniel{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end:3;
+    grid-row-start:1;
+    background-color: #0fc1d8;
+    padding:20px;
+}
+.Jonathan{
+    background:#312b2b;
+    grid-column-start:3;
+    grid-row-end:3;
+    grid-row-start:1;
+    color: white;
+}
+.Jeanette{
+    background:white;
+    grid-column-start:1;
+    grid-row-end:5;
+    grid-row-start:3;
+}
+.Patrick{
+    background:#000;
+    color:white;
+    grid-row-start: 3;
+    grid-row-end:5;
+    grid-column-end:4;
+    grid-column-start:2;
+}
+.Kira{
+    background:hsl(0,16%,96%);
+    grid-row-start:1;
+    grid-column-start:4;
+    grid-row-end:5;
+}
+header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+header img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+header h1{
+    font-size:1.5rem;
+    margin-bottom:5px;
+}
+header p{
+    font-size:1rem;
+    opacity:0.8;
+}
